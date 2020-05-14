@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Sniglet", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Indie Flower", cursive;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #1ca2f9;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: none;
+}
+
+li{
+    margin: 10px;
+}
+.fas, .far{
+    color: white;
+    margin: 10px;
+}
+.fa-bars{
+    margin-right: 25px;
+}
+.logo{
+    margin: 10px;
+}
+.logo p{
+    color: white;
+    font-weight: bold;
+}
+section, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.un{
+    background-image: linear-gradient(#0298f9, #FFF);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.deux, .quatre{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.deux h2, .quatre h2{
+    color: #0298f9;
+    text-decoration: underline;
+    font-size: 35px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.deux p, .quatre > p{
+    text-align: center;
+    margin: 10px;
+}
+.trois{
+    background-color: #70cbf4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quatre h3{
+    margin-top: 10px;
+}
+.badge{
+    background-color: white;
+    color: #1ca2f9;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px 2px lightslategray;
+}
+.bloc-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75%;
+    margin: 10px;
+}
+.bloc{
+    background-image: linear-gradient(#0298f9, #70cbf4);
+    display: flex;
+    height: 15%;
+
+}
+.blocContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    flex-direction: column;
+    text-align: center;
+    background-color: lightgray;
+    justify-content: space-around;
+}
+hr{
+    margin-top: 25px;
+    color: grey;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        position: absolute;
+        right: 0;
+        list-style: none;
+        color: white;
+        background-color: #1ca2f9;
+        text-align: right;
+        top: 50px;
+        width: 100px;
+        padding-right: 10px;
+    }
+    .portfolio img{
+        height: 30%;
+    }
+    .toTop{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        right: 10px;
+        bottom: 15px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .fa-chevron-circle-up{
+        color: #0298f9;
+        margin: 0;
+        font-size: 45px;
+        margin-top: -1px;
+        margin-left: -1px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .fa-bars{
+        display: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        color: white;
+        font-weight: bold;
+    }
+    .deux{
+        justify-content: center;
+        height: 75vh;
+    }
+    .portfolio{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 40%;
+    }
+    .portfolio img{
+        width: 30%;
+    }
+    .trois{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 25vh;
+    }
+    .quatre{
+        justify-content: center;
+    }
+    .bloc{
+        width: 30%;
+        height: 45%;
+    }
+    .bloc-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 40%;
+        margin: 10px;
+        align-items: center;
+    }
+    .blocContent{
+        margin: 10px;
+    }
+    .blocContent > p{
+        margin-top: 10%;
+    }
+    .quatre > p, .quatre > h2{
+        margin-top: 5%;
+    }
+    footer{
+        flex-direction: row;
+        height: 25vh;
+        text-align: left;
+    }
+    hr{
+        display: none;
+    }
+    .toTop{
+        display: none;
+    }
+}
